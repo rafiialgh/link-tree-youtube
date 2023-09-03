@@ -19,6 +19,10 @@ const link = [
     link: "https://youtu.be/_hSAVHhprH0",
     name: "main bowling dulu lah 🎳"
   },
+  {
+    link: "https://youtu.be/61c9tTcHe1A",
+    name: "BANDUNG LAUTAN FIREEE 🔥🔥🔥"
+  },
 ]
 
 export default link
