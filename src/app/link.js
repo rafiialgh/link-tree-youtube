@@ -23,6 +23,10 @@ const link = [
     link: "https://youtu.be/61c9tTcHe1A",
     name: "BANDUNG LAUTAN FIREEE 🔥🔥🔥"
   },
+  {
+    link: "https://youtu.be/doBRtecPJ5M",
+    name: "TREK KINNGG 👑🥵🥶"
+  },
 ]
 
 export default link
