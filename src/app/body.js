@@ -20,14 +20,15 @@ export default function Body() {
       <div id="link" className="w-full bg-gradient-to-tl from-gray-700 via-gray-900 to-black">
         <div className="w-full h-0.5 bg-gradient-to-r from-purple-900 to-purple-950">
         </div>
-        <div className="flex justify-center items-center w-full">
+        <div className="flex items-center justify-center w-full">
           <div className="w-[22rem] h-fit mb-14 mt-14 bg-gradient-to-r from-cyan-800 to-cyan-950 rounded-xl p-0.5 sm:w-full sm:mx-7">
-            <div className="relative rounded-xl w-full h-full bg-gray-900">
-              <Image className="absolute invert z-0 sm:w-96" src={bgOurnament} alt="bg" width={1001} height={1001}/>
+            <div className="relative w-full h-full bg-gray-900 rounded-xl">
+              <Image className="absolute z-0 invert sm:w-96" src={bgOurnament} alt="bg" width={1001} height={1001}/>
               <Image className="absolute bottom-0 right-0 z-0 w-[30rem] invert" src={bgMesh} alt="bg" width={2000} height={2000}/>
-                <h1 className="font-robotoMono pt-10 mb-10 text-2xl items-center justify-center flex">Link</h1>
-              <div className="flex flex-col w-full justify-center items-center flex-wrap">
-                <dl className="sm:w-full sm:flex sm:flex-row sm:flex-wrap sm:justify-between">{link.map(createCard)}</dl>
+                <h1 className="flex items-center justify-center pt-10 mb-2 text-2xl font-robotoMono">Link</h1>
+                <p className="flex items-center justify-center mb-10 text-md font-commissioner text-zinc-500">klik watch on youtube yeee ⬇️</p>
+              <div className="flex flex-col flex-wrap items-center justify-center w-full">
+                <dl className="flex-col items-center justify-center gap-5 md:flex-row md:flex-wrap sm:w-full sm:flex">{link.map(createCard)}</dl>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ import Contact from "@/app/contact";
 export default function Page() {
   return (
     <>
-      <div className="pt-[20px] bg-[url('/bg-main-dark-800w.jpg')] bg-cover h-[20.5rem]">
+      <div className="pt-[20px] bg-[url('/bg-main-dark-800w.jpg')] bg-cover h-[20.5rem] ">
         <Nav/>
         <Hero/>
         <Body/>
