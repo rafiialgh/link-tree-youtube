@@ -8,8 +8,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Link Youtube-nya Rafii',
-  description: 'Kalo mau liat video di Youtube gueh 😎',
+  title: 'Link youtube',
+  description: 'Kalo mau liat video di Youtube gue 😎',
 }
 
 export default function RootLayout({ children }) {

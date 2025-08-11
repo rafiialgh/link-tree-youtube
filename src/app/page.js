@@ -5,14 +5,14 @@ import Contact from "@/app/contact";
 
 export default function Page() {
   return (
-    <>
-      <div className="pt-[20px] bg-[url('/bg-main-dark-800w.jpg')] bg-cover h-[20.5rem] ">
+    <div className="flex item-center justify-center bg-gray-50">
+      <div className=" max-w-xl">
         <Nav/>
-        <Hero/>
+        {/* <Hero/> */}
         <Body/>
         <Contact/>
       </div>
-    </>
+    </div>
   )
 }
 

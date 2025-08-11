@@ -30,7 +30,15 @@ const link = [
   {
     link: "LkX7XzrWGxc?si=Vvuzs06NOZ7zKbgL",
     name: "kapan lagi buka bareng 2025"
-  }
+  },
+  {
+    link: "L1HqeCn8VWI?si=HAV2ZO7g1NZALDBa",
+    name: "grebek rumah rama!!! ada mobil 1 milyar?!?!?!"
+  },
+  {
+    link: "QxVq70k1SwM?si=dBr1xGV6WBSwdiOI",
+    name: "CAMP BDG #UNCUT #NOFAKE #CHINESEFOOD"
+  },
   
 ]
 
