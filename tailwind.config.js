@@ -12,11 +12,21 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        marquee: 'marquee 10s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
     },
     fontFamily : {
       commissioner: ['Commissioner', 'sans-serif'],
       robotoMono: ['Roboto Mono', 'monospace'],
-      rubikMonoOne: ['Rubik Mono One', 'sans-serif']
+      rubikMonoOne: ['Rubik Mono One', 'sans-serif'],
+      mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
     }
   },
   plugins: [],

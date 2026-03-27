@@ -1,18 +1,15 @@
-import Nav from "./nav"
-import Hero from "./hero"
-import Body from "@/app/body";
-import Contact from "@/app/contact";
+import Nav from "./nav";
+import Body from "./body";
+import Contact from "./contact";
 
 export default function Page() {
   return (
-    <div className="flex item-center justify-center bg-gray-50">
-      <div className=" max-w-xl">
-        <Nav/>
-        {/* <Hero/> */}
-        <Body/>
-        <Contact/>
+    <div className="flex flex-col items-center min-h-screen text-gray-800 bg-white">
+      <div className="w-full max-w-5xl px-6 md:px-8">
+        <Nav />
+        <Body />
+        <Contact />
       </div>
     </div>
-  )
+  );
 }
-

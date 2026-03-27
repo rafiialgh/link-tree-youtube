@@ -29,3 +29,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("/noisy-background.jpg");
+  opacity: 0.06;
+} */

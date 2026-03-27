@@ -1,39 +1,31 @@
 import Image from "next/image";
-import Card from "@/app/card";
-import link from "@/app/link";
-import bgMesh from "public/contact-bg.png"
-import bgOurnament from "public/project-ournament-lines.png"
+import Card from "./card";
+import link from "./link"; 
+import bgMesh from "../../public/contact-bg.png";
+import bgOurnament from "../../public/project-ournament-lines.png";
 
 export default function Body() {
-
-  function createCard(links) {
-    return (
-      <Card
-        href={links.link}
-        name={links.name}
-      />
-    )
-  }
-
   return (
-    <div className="max-w-xl border-t">
-      <div id="link" className=" bg-white">
-        <div className="w-full h-0.5">
-        </div>
-        <div className="flex items-center justify-center w-full">
-          <div className="w-[22rem] h-fit mb-14 mt-14 bg-gradient-to-r from-cyan-800 to-cyan-950 rounded-xl p-0.5 sm:w-full sm:mx-7">
-            <div className="relative w-full h-full bg-gray-900 rounded-xl">
-              <Image className="absolute z-0 invert sm:w-96" src={bgOurnament} alt="bg" width={1001} height={1001}/>
-              <Image className="absolute bottom-0 right-0 z-0 w-[30rem] invert" src={bgMesh} alt="bg" width={2000} height={2000}/>
-                <h1 className="flex items-center justify-center pt-10 mb-2 text-2xl font-commissioner">Link</h1>
-                <p className="flex items-center justify-center mb-10 text-md font-commissioner text-zinc-500">klik watch on youtube yeee ⬇️</p>
-              <div className="flex flex-col flex-wrap items-center justify-center w-full">
-                <dl className="flex-col items-center justify-center gap-5 md:flex-row md:flex-wrap sm:w-full sm:flex">{link.map(createCard)}</dl>
-              </div>
-            </div>
+    <section id="link" className="w-full py-10">
+      <div className="relative w-full px-6 py-12 overflow-hidden bg-[#F5F0E8] border border-[#DDD6C8] shadow-sm sm:px-12">
+        
+        <Image className="absolute top-0 left-0 z-0 opacity-10 pointer-events-none" src={bgOurnament} alt="background ornament" width={1001} height={1001} />
+        <Image className="absolute bottom-0 right-0 z-0 w-[30rem] opacity-10 pointer-events-none" src={bgMesh} alt="background mesh" width={2000} height={2000} />
+
+        <div className="relative z-10 flex flex-col  w-full">
+          <h2 className="mb-3 text-xl text-gray-800 font-mono uppercase tracking-widest">YouTube Collection</h2>
+          <p className="mb-10 text-gray-500 text-sm font-mono uppercase">
+            klik watch on youtube yee <span className="animate-bounce inline-block duration-300">↓</span>
+          </p>
+
+          {/* Responsive Grid Layout */}
+          <div className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {link.map((item, index) => (
+              <Card key={index} href={item.link} name={item.name} />
+            ))}
           </div>
         </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }
