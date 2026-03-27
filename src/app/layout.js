@@ -8,10 +8,24 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Link youtube',
-  description: 'Kalo mau liat video di Youtube gue 😎',
+  title: 'Link Youtube',
+  description: 'Vlog, MCnya kita',
+  openGraph: {
+    title: 'Link Youtube',
+    description: 'Vlog, MCnya kita',
+    siteName: 'Link Youtube',
+    images: [
+      {
+        url: '/preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'Preview Link youtube',
+      },
+    ],
+    locale: 'id_ID',
+    type: 'website',
+  },
 }
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
