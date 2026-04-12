@@ -39,6 +39,10 @@ const link = [
     link: "QxVq70k1SwM?si=dBr1xGV6WBSwdiOI",
     name: "CAMP BDG #UNCUT #NOFAKE #CHINESEFOOD"
   },
+  {
+    link: "6STmENxYQtE?si=ny68CZJGo3aZUJCZ",
+    name: "nengok rama sek dhisik, vlog solo - jogja"
+  }
   
 ]
 
